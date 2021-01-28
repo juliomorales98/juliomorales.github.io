@@ -9,7 +9,28 @@
     box-shadow:5px 0px 5px rgba(0,0,0,0.2);
 }
 
-
+.languageSelector{
+    display: grid;
+    grid-template-columns: auto;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 5em;
+    margin-left: 3em;
+    color: white;
+}
+.languageSelector i{
+    margin-bottom: 1em;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.languageSelector i img{
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+    border: none;
+}
 .navBar h3{
     text-decoration: none;
     color:white;

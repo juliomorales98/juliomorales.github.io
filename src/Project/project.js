@@ -13,7 +13,7 @@ const project = (props) => {
         <span className="close" onClick={CloseMaximize}>
             x
         </span>
-        <img className="modal-content" id="imgMaximized" />
+        <img className="modal-content" id="imgMaximized" alt='' />
         <div id="caption"></div>
       </div>
     </div>
