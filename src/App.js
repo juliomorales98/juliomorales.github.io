@@ -9,7 +9,6 @@ import projects from "./projects.js";
 import mexico from "./assets/img/icons/mexico.png";
 import unitedKingdom from "./assets/img/icons/united-kingdom.png";
 
-
 class App extends Component {
   state = {
     sectionShowing: 0,
@@ -23,8 +22,17 @@ class App extends Component {
   changeSectionShowingHandler = (index) => {
     this.setState({ sectionShowing: index });
   };
-  changeLanguage = (index) => {
+  changeLanguage = (index, fromPopup) => {
     this.setState({ language: index });
+    if (fromPopup) {
+      document.getElementsByClassName(
+        "languageSelectorPopup"
+      )[0].style.display = "none";
+    }
+  };
+  displayLanguageSelectorPopup = () => {
+    document.getElementsByClassName("languageSelectorPopup")[0].style.display =
+      "inline-flex";
   };
 
   render() {
@@ -34,7 +42,7 @@ class App extends Component {
         {projects.map((project, index) => {
           return (
             <button onClick={() => this.changeProjectShowingHandler(index)}>
-              {project.short[this.state.language]}
+              {project.icon} {project.short[this.state.language]}
             </button>
           );
         })}
@@ -49,12 +57,13 @@ class App extends Component {
             projects[this.state.projectShowing].description[this.state.language]
           }
           img={projects[this.state.projectShowing].img}
+          language={this.state.language}
         ></Project>
       );
     } else {
       project = null;
     }
-    
+
     return (
       <div className="App">
         <aside>
@@ -72,10 +81,20 @@ class App extends Component {
                 <i className="fa fa-folder-open"></i>
                 <p> {sections[2].title[this.state.language]}</p>
               </li>
+              <li className="configurationButton" onClick={() => this.displayLanguageSelectorPopup()}>
+                <i className="fa fa-cog"></i>
+              </li>
             </ul>
             <div className="languageSelector">
-              <i onClick={() => this.changeLanguage(0)}> <img src={unitedKingdom} alt='UK flag'></img>English</i>
-              <i onClick={() => this.changeLanguage(1)}> <img src={mexico} alt='Mexico flag'></img>Español</i>
+              <i onClick={() => this.changeLanguage(0, false)}>
+                {" "}
+                <img src={unitedKingdom} alt="UK flag"></img>English
+              </i>
+              <i onClick={() => this.changeLanguage(1, false)}>
+                {" "}
+                <img src={mexico} alt="Mexico flag"></img>
+                <p>Español</p>
+              </i>
             </div>
           </Menu>
         </aside>
@@ -90,6 +109,20 @@ class App extends Component {
           </Information>
           {project}
         </main>
+        <div className="languageSelectorPopup">
+          <div>
+            <i onClick={() => this.changeLanguage(0, true)}>
+              {" "}
+              <img src={unitedKingdom} alt="UK flag"></img>
+              <p>English</p>
+            </i>
+            <i onClick={() => this.changeLanguage(1, true)}>
+              {" "}
+              <img src={mexico} alt="Mexico flag"></img>
+              <p>Español</p>
+            </i>
+          </div>
+        </div>
       </div>
     );
   }

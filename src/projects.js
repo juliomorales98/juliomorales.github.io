@@ -22,6 +22,7 @@ const projects = [
     name: ["TeachMe - E-learning platform for UdeG community.",
     "TeachMe - Plataforma de aprendizaje electrónico para la comunidad UdeG"],
     short: ["TeachMe","TeachMe"],
+    icon : <i className='fab fa-python'></i>,
     description: [
       <span>
         <p>
@@ -74,10 +75,10 @@ const projects = [
         <p>
           TeachMe es una plataforma web donde toda la comunidad UdeG (estudiantes, profesores, doctores, etc) pueden
           ver, compartir y crear conocimiento en diferentes formatos disponibles tales como artículos, videos y documentos,
-          además de dar retroalimentaciones a este mismo contenido.
+          además de poder dar retroalimentaciones a este mismo contenido.
         </p>
         <p>
-          En este momento, todas las personas con un correo UdeG puede acceder al sitio y a todas sus funciones
+          En este momento, todas las personas con un correo UdeG pueden acceder al sitio y a todas sus funciones
           sin costo alguno.
         </p>
         <p>
@@ -130,6 +131,7 @@ const projects = [
   {
     name: ["Tangerine - Data mining desktop application","Tangerine - Aplicación de escritorio para la minería de datos"],
     short: ["Tangerine","Tangerine"],
+    icon : <i className='fab fa-windows'></i>,
     description: [
       <span>
         <p>
@@ -168,9 +170,9 @@ const projects = [
       <span>
         <p>
           Tangerine es una aplicación de escritorio Windows para manipular y analizar
-          los datos dados desde un archivo csv. Tangerine cuenta con herramientas para la limpieza
-          de datos, analizis multivariable, grafico de datos y muchas otras las cuales ayudan al usuario
-          a hacer un analizis de una manera simple e intuitiva.
+          la información dada desde un archivo csv. Tangerine cuenta con herramientas para la limpieza
+          de datos, análisis multivariable, gráfico de datos y muchas otras las cuales ayudan al usuario
+          a hacer un análisis de una manera simple e intuitiva.
         </p>
         <p>
           <b>Desarrollado con:</b>
@@ -213,6 +215,7 @@ const projects = [
     name: ["Experimento Piratas - Videogame to test student's behaviour",
     "Experimento Piratas - Videojuego para analizar el comportamiento de los estudiantes"],
     short: ["Experimento Piratas","Experimento Piratas"],
+    icon : <i className='fab fa-unity'></i>,
     description: [
       <span>
         <p>
@@ -242,7 +245,7 @@ const projects = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            Proposal
+            Proposal (document)
           </a>
           <br></br>
           <a
@@ -321,6 +324,7 @@ const projects = [
   {
     name: ["E-library: Manage and share your pdfs", "E-library: Administra y comparte tus pdfs"],
     short: ["E-library","E-library"],
+    icon : <i className='fab fa-php'></i>,
     description: [
       <div>
         <p>

@@ -18,7 +18,7 @@ const sections = [
           Ingeniería en Informática en la Universidad de Guadalajara
         </p>
         <p>
-          Soy un entusiasta del FOSSS, la música y el basquetball, y no uso Arch
+          Soy un entusiasta del FOSS, la música y el basquetball, y no uso Arch
           btw.
         </p>
       </div>,

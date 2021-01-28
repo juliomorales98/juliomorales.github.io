@@ -1,105 +1,149 @@
-.navBar{
-    background-color:#4484CE;
-    position: inherit;
-    height: 100%;
-    width: 10em;
-    max-width: 10em;
-    text-align: center;
-    padding: 1em;
-    box-shadow:5px 0px 5px rgba(0,0,0,0.2);
+.navBar {
+  background-color: #4484ce;
+  position: inherit;
+  height: 100%;
+  width: 10em;
+  max-width: 10em;
+  text-align: center;
+  padding: 1em;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.languageSelector{
-    display: grid;
-    grid-template-columns: auto;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    margin-bottom: 5em;
-    margin-left: 3em;
-    color: white;
+.languageSelectorPopup {
+  display: none;
 }
-.languageSelector i{
-    margin-bottom: 1em;
-    cursor: pointer;
-    display: grid;
-    grid-template-columns: auto auto;
+.languageSelector {
+  display: grid;
+  grid-template-columns: auto;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  margin-bottom: 5em;
+  margin-left: 3em;
+  color: white;
 }
-.languageSelector i img{
+.languageSelector i {
+  margin-bottom: 1em;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.languageSelector i img {
+  margin: 0 auto;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
+.navBar h3 {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-top: 0.3em;
+  margin-bottom: 2em;
+  font-weight: bold;
+}
+.navBar ul {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+}
+.navBar ul li {
+  margin-bottom: 1em;
+  cursor: pointer;
+  padding: 0.3em;
+}
+.navBar ul .configurationButton {
+  display: none;
+}
+.navBar ul li p {
+  display: inline;
+}
+.navBar ul li:hover {
+  color: #f9cf00;
+  border: 1px solid white;
+}
+
+.navBar img {
+  margin-top: 1em;
+  width: 130px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+}
+@media only screen and (min-width: 320px) and (max-width: 900px) {
+  .navBar {
+    height: 5em;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
-    width: 25px;
-    height: 25px;
-    border: none;
-}
-.navBar h3{
-    text-decoration: none;
-    color:white;
-    font-size: 20px;
-    margin-top: 0.3em;
-    margin-bottom: 2em;
-    font-weight: bold;
-}
-.navBar ul{
+    position: relative;
+    display: flex;
+    text-align: inherit;
+    padding: 0em;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  .navBar h3 {
+    display: none;
+  }
+  .navBar img {
+    margin-top: 0.5em;
+    width: 50px;
+    height: 50px;
+    margin-left: 0.5em;
+    border-width: 3px;
+  }
+  .navBar ul {
     list-style-type: none;
     padding: 0;
-    color:white;
-}
-.navBar ul li{
-    margin-bottom: 1em;
-    cursor: pointer;
-    padding: 0.3em;
-}
-.navBar ul li p{
+    margin-left: 1em;
+    width: 100%;
+  }
+  .navBar ul li {
     display: inline;
-}
-.navBar ul li:hover{
-    color: #F9CF00;
-    border: 1px solid white;
-}
-
-.navBar img{
-    margin-top: 1em;
-    width: 130px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid rgba(255,255,255,0.3);
-}
-@media only screen and (min-width: 320px) and (max-width: 900px){
-    
-    .navBar{
-        height: 5em;
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        position: relative;
-        display:flex;
-        text-align: inherit;
-        padding: 0em;
-        box-shadow:0px 5px 5px rgba(0,0,0,0.2);
-    }
-    .navBar h3{
-        display: none;
-    }
-    .navBar img{
-        margin-top: 0.5em;
-        width: 50px;
-        height: 50px;
-        margin-left: 2em;
-        border-width: 3px;
-    }
-    .navBar ul{
-        list-style-type: none;
-        padding: 0;
-        margin-left: 2em;
-    }
-    .navBar ul li{
-        display: inline;
-        padding: 0.3em;
-        font-size: 30px;
-        margin-right: 1em;
-    }
-    .navBar ul li p{
-        display: none;
-    }
-    
+    padding: 0.3em;
+    font-size: 30px;
+    margin-right: 0.5em;
+  }
+  .navBar ul li p {
+    display: none;
+  }
+  .navBar ul .configurationButton {
+    display: inline;
+  }
+  .languageSelector {
+    display: none;
+  }
+  .languageSelectorPopup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 3;
+  }
+  .languageSelectorPopup div{
+      color: white;
+      font-weight: bold;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+  .languageSelectorPopup div i{
+      width: 100%;
+      display: block;
+      margin-bottom: 3em;
+  }
+  
+  .languageSelectorPopup div i img{
+      width: 50%;
+      height: 50%;
+      margin-bottom: 0;
+  }
+  .languageSelectorPopup div i p{
+      font-size: 2.5em;
+      margin-top: 0;
+  }
 }

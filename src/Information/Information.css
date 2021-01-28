@@ -1,66 +1,71 @@
-.information{
-    margin: 1em 0 0 13em;
-    position: inherit;
+.information {
+  margin: 1em 0 0 13em;
+  position: inherit;
+  padding: 1em;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: fit-content;
+  width: 80%;
+  background-color: white;
+}
+.information h1 {
+  color: #4484ce;
+}
+.information a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  margin: 0.3em 1.3em 0.3em 0;
+  font-size: 30px;
+}
+
+.information ul {
+  display: grid;
+  grid-template-columns: auto auto;
+  list-style: none;
+  font-size: 20px;
+  padding: 0;
+}
+
+.information ul li {
+  margin-bottom: 1em;
+}
+
+.information .github:hover :first-child {
+  color: #9742a5;
+}
+.information .linkedin:hover :first-child {
+  color: #0a66c2;
+}
+.information .envelope:hover :first-child {
+  color: #feb737;
+}
+.information button {
+  margin-right: 0.2em;
+  height: fit-content;
+  cursor: pointer;
+  background-color: #4484ce;
+  border: 1px solid white;
+  border-radius: 0.3em;
+  color: white;
+  padding: 1em;
+  font-weight: bold;
+}
+@media only screen and (min-width: 320px) and (max-width: 900px) {
+  .information {
+    margin: 1em auto;
+    position: relative;
     padding: 1em;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     height: fit-content;
     width: 80%;
     background-color: white;
-}
-.information h1{
-    color: #4484CE;
-}
-.information a{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    margin: 0.3em 1.3em 0.3em 0;
-    font-size: 30px;
-}
-
-.information ul{
-    display: grid;
-    grid-template-columns: auto auto;
-    list-style: none;
-    font-size: 20px;
-    padding: 0;
-}
-
-.information ul li{
-    margin-bottom: 1em;
-}
-
-.information  .github:hover :first-child{
-    color: #9742a5;
-}
-.information  .linkedin:hover :first-child{
-    color: #0a66c2;
-}
-.information  .envelope:hover :first-child{
-    color: #feb737;
-}
-.information button{
-    margin-right: 0.2em;
-    height: fit-content;
-    cursor: pointer;
-    background-color: #4484CE;
-    border: 1px solid white;
-    border-radius: 0.3em;
-    color: white;
-    padding: 1em;
-    font-weight: bold;
-}
-@media only screen and (min-width: 320px) and (max-width: 900px){
-    .information{
-        margin: 1em auto;
-        position: relative;
-        padding: 1em;
-        height: fit-content;
-        width: 80%;
-        background-color: white;
-    }
-
+  }
+  .information ul {
+    grid-template-columns: auto;
+  }
+  .information a{
+    width: 100%;
+  }
 }
