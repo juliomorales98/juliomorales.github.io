@@ -25,6 +25,7 @@ const sections = [
     ],
     extra: [
       <div>
+        <b>Contact information:</b><br></br>
         <a
           href="mailto:juliocesar.mr@protonmail.com"
           target="_blank"
@@ -52,6 +53,7 @@ const sections = [
       </div>,
       <div>
         {/*Español*/}
+        <b>Información de contacto:</b><br></br>
         <a
           href="mailto:juliocesar.mr@protonmail.com"
           target="_blank"
@@ -105,13 +107,18 @@ const sections = [
             <i className="fab fa-java"></i> Java
           </li>
           <li>
-            <i className="fab fa-python"></i> Python3/Django
+            <i className="fab fa-python"></i> Python 3 / Django 3
           </li>
           <li>
-            <i className="fab fa-stack-overflow"></i> JavaScript/React
+            <i className="fab fa-stack-overflow"></i> JavaScript / React
           </li>
           <li>
-            <i className="fab fa-html5"></i> Web Development
+            <i className="fab fa-html5"></i> HTML5
+          </li>
+          <li>
+            <i className="fab fa-css3"></i> CSS3
+          </li><li>
+            <i className="fab fa-php"></i> PHP
           </li>
           <li>
             <i className="fa fa-table"></i> SQL
@@ -133,13 +140,18 @@ const sections = [
             <i className="fab fa-java"></i> Java
           </li>
           <li>
-            <i className="fab fa-python"></i> Python3/Django
+            <i className="fab fa-python"></i> Python 3 / Django 3
           </li>
           <li>
-            <i className="fab fa-stack-overflow"></i> JavaScript/React
+            <i className="fab fa-stack-overflow"></i> JavaScript / React
           </li>
           <li>
-            <i className="fab fa-html5"></i> Desarrollo web
+            <i className="fab fa-html5"></i> HTML5
+          </li>
+          <li>
+            <i className="fab fa-css3"></i> CSS3
+          </li><li>
+            <i className="fab fa-php"></i> PHP
           </li>
           <li>
             <i className="fa fa-table"></i> SQL
